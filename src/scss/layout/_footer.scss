@@ -1,0 +1,118 @@
+.footer{
+    width: 90%;
+    margin: 0rem auto 0rem auto;
+    position: relative;
+    padding-top: 10rem;
+      h4{
+        color: $gris-oscuro;
+        font-size: 2.3rem;
+        text-align: center;
+        font-family: $font2;
+        margin-bottom: 1rem;
+        @include celular-chico{
+
+          font-size: 1.6rem;
+
+        }
+        @include tablet-chica{
+
+          font-size: 4rem;
+
+        }
+      }
+
+      p{
+        color: $gris-oscuro;
+        font-family: $font1;
+        font-weight: bold;
+        text-align: center;
+
+        @include celular-chico{
+
+          font-size: 1.2rem;
+
+        }
+
+
+      }
+
+}
+
+
+.footer::before{
+  content: "";
+  height: 3px;
+  background-color: $rojo-muy-oscuro;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+
+}
+
+.contactos{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+
+  a,p{
+    color: $piel;
+      height: auto;
+      margin: 0;
+      font-size: 1rem;
+      @include celular-chico{
+
+        font-size: .6rem;
+
+      }
+      @include tablet-chica{
+
+        font-size: 1.5rem;
+
+      }
+
+      @include tablet-grande{
+
+        font-size: 2rem;
+
+      }
+
+  }
+
+  a{
+    margin: 0 1rem;
+  }
+
+  a:hover{
+
+    color: $rojo-oscuro;
+
+  }
+}
+
+.contactos::after{
+
+  content: "";
+  position: absolute;
+  background-color:$gris-oscuro;
+  top: 100%;
+  left: auto;
+  right: auto;
+  width: 90%;
+  height: 7px;
+
+}
+
+.contactos:hover{
+
+  &::after{
+    background-color: $rojo-muy-oscuro;
+    width:60%;
+
+  }
+
+}

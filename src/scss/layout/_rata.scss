@@ -1,0 +1,46 @@
+.rata-div{
+
+  margin: 10rem auto 0 auto;
+  width: 90%;
+  height: 8rem;
+  position: relative;
+
+  p{
+    font-family: $font1;
+    color: $gris-oscuro;
+    font-size: 2rem;
+    text-align: center;
+    span{
+
+      font-weight: bold;
+
+    }
+
+  }
+
+  .rata,.queso{
+    position: absolute;
+    margin: 0;
+    width: auto;
+    height: 100%;
+  }
+
+  .rata{
+  bottom: 0rem;
+  left: 0px;
+  
+  }
+
+  .queso{
+
+    bottom: 0rem;
+    right: 0px;
+    height: 60%;
+    @include tablet-chica{
+
+          height: 100%;
+
+    }
+  }
+
+}

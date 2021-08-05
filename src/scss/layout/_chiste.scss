@@ -1,0 +1,43 @@
+.contenedor-chiste{
+
+  width: 70%;
+  margin: 10rem auto 3rem auto;
+
+  .chiste{
+
+      h3{
+            font-family: $font2;
+            font-size: 3rem;
+            text-align: center;
+            color: $rojo-oscuro;
+
+        }
+
+      p{
+
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: $font1;
+        color: $gris-oscuro;
+
+        @include tablet-chica{
+          font-size: 2rem;
+
+        }
+
+        @include celular-chico{
+
+          font-size: 1rem;
+
+        }
+
+
+
+
+
+      }
+
+  }
+
+
+}

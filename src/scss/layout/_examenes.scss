@@ -1,0 +1,215 @@
+.contenido__main{
+  position: relative ;
+  height: 100%;
+    overflow-x: hidden;
+    video{
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: 100%;
+
+      visibility:visible;
+      z-index: -10;
+
+    }
+
+    .main--examen{
+        background-color: rgba(255,255,255,.3);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 2rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        border-radius: 1rem;
+        @include celular-chico{
+
+
+
+        }
+        @include tablet-chica{
+
+
+        }
+
+        @include tablet-grande{
+
+        width: 70%;
+          margin-left: 2rem;
+        }
+        @include desktop{
+
+          width: 60%;
+
+        }
+
+    }
+
+
+}
+
+
+.examen::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: $celeste;
+  transition: all 1s ease-in-out;
+  top: 100%;
+  display: block;
+  width: 100%;
+  left: 0%;
+
+  @include celular-chico{
+
+
+
+  }
+  @include tablet-chica{
+
+
+  }
+
+  @include tablet-grande{
+    width: 65%;
+    left: 35%;
+  }
+
+
+
+}
+.examen{
+
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    position: relative;
+    padding: .1rem  .5rem;
+    border-radius: .3rem;
+    transition: all 1s ease-in-out;
+    transition: background-color .1s ease-in-out;
+    margin-bottom: 4rem;
+
+    @include tablet-grande{
+
+      display: grid;
+      grid-template-columns: 33% 67%;
+
+    }
+
+
+
+
+    img{
+
+      margin: auto 0;
+      transition: all 1s ease-in-out;
+    }
+
+
+
+    .examen--info{
+      font-family: $font2;
+      font-size: 2rem;
+      text-align: left;
+      color: $rojo-oscuro;
+      margin-bottom: 2rem;
+      h3{
+        margin: 1rem auto 0rem auto;
+        transition: all 1s ease-in-out;
+        font-size: 2rem;
+
+        @include tablet-chica{
+
+          font-size: 3.5rem;
+
+        }
+
+
+      }
+      p{
+        color: $rojo-oscuro;
+        font-family: $font1;
+        margin: .3rem auto 0rem auto;
+        font-size: 1.6rem;
+
+        @include tablet-chica{
+
+          font-size: 2rem;
+
+        }
+
+        @include tablet-grande{
+
+          font-size: 2.6rem;
+
+        }
+
+      }
+
+      span{
+
+        color: $rojo-oscuro;
+        background-color: $celeste;
+        padding: .5rem .8rem;
+        border-radius: .7rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+
+        @include celular-chico{
+
+
+
+        }
+        @include tablet-chica{
+
+          font-size: 2rem;
+
+        }
+
+        @include tablet-grande{
+
+          font-size: 2.6rem;
+
+        }
+        @include desktop{
+
+
+
+        }
+
+      }
+    }
+}
+
+.examen:hover{
+
+  background-color: rgba(255,255,255,.1);
+
+  h3{
+
+    font-size: 3rem;
+    color: $rojo-muy-oscuro;
+
+  }
+
+  &::after{
+    width: 55%;
+    @include tablet-grande{
+      width: 35%;
+    }
+
+  }
+
+
+
+  img{
+    transform: scaleX(1.01);
+
+    transform: rotate(1deg);
+
+  }
+
+}

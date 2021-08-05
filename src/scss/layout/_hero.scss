@@ -1,0 +1,166 @@
+.contenido__hero{
+    height: 100vh;
+    background-image: url("../img/estudiando.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+    .hero--titulo{
+      margin-top: 4rem;
+      @include tablet-grande{
+
+        margin-top: 1rem;
+
+      }
+        h2,h1{
+            font-family: $font2;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            margin: 0rem auto;
+
+        }
+
+        h2{
+            font-size: 3.4rem;
+            color: $piel;
+
+            @include tablet-grande{
+
+              font-size: 4.4rem;
+
+            }
+            /*   @include desktop{
+
+              font-size: 6.4rem;
+
+            }  */
+        }
+
+        h1{
+          font-size: 3.8rem;
+          color: $celeste;
+
+          @include tablet-grande{
+
+            font-size: 4.8rem;
+
+
+          }
+        /*  @include desktop{
+
+            font-size: 6.8rem;
+
+
+          }*/
+
+        }
+    }
+
+    .hero--frase{
+      width: 80%;
+
+        p{
+          font-size: 1.8rem;
+          color: $piel;
+          font-family: $font1;
+          font-weight: bold;
+          width: auto;
+          margin: 5rem auto 1rem auto;
+          text-align: center;
+          @include tablet-grande{
+
+            font-size: 3.2rem;
+            margin-top: 3rem;
+
+          }
+
+
+        }
+    }
+
+    .hero--hora{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 80%;
+      p{
+        font-size: 1.5rem;
+        font-family: $font1;
+        color: $celeste;
+        margin: 0 auto;
+
+        @include tablet-grande{
+
+            font-size: 4rem;
+
+        }
+        i{
+
+          margin-right: .3rem;
+
+        }
+
+      }
+
+    }
+
+    .hero--flecha{
+      i{
+      color: $gris-oscuro;
+    }
+      margin-top: 3rem;
+      @include tablet-grande{
+
+        margin: 0rem auto 2rem auto;
+
+      }
+      @include desktop{
+
+        margin: 1rem auto 3rem auto;
+
+      }
+    }
+
+}
+
+.iconos{
+  margin: 6rem auto 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  @include tablet-grande{
+
+    margin-bottom: 1rem;
+
+  }
+
+  i{
+    font-size: 3rem;
+    height: 100%;
+    width: 100%;
+    color: $blanco;
+    margin-right: 1rem;
+
+    @include tablet-grande{
+      font-size: 5rem;
+      margin-right: 4.5rem;
+
+    }
+  }
+
+  .no-right{
+
+    margin-right: 0;
+
+  }
+}

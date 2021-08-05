@@ -1,0 +1,159 @@
+.header{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  column-gap: 1.5rem;
+  height: 16rem;
+  background-color: $celeste;
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  z-index: 10;
+
+  &.fijo{
+
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    box-shadow: 0 .8rem 1.8rem #444;
+
+
+  }
+
+  @include tablet-grande{
+    column-gap: .5rem;
+    grid-template-columns: 60% 40%;
+  }
+  .header-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: $rojo-oscuro;
+        font-family: $font1;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 1.5rem;
+        margin:auto;
+        @include tablet-grande{
+
+            font-size: 4rem;
+
+        }
+        span{
+
+          color: $blanco;
+          background-color: $rojo-muy-oscuro;
+          border-radius: 4px;
+          padding: .2rem .6rem;
+
+
+        }
+    }
+
+  }
+
+
+
+  .nav{
+    display: none;
+    margin: auto;
+    background-color: $gris-oscuro;
+    padding: 1.5rem 2.5rem;
+    border-radius: 2rem;
+    width: 100%;
+
+    @include tablet-grande{
+      display: flex;
+      width: 90%;
+      i{
+        font-size: 3rem;
+      }
+    }
+
+    @include desktop{
+      i{
+          font-size: 4rem;
+
+      }
+
+
+    }
+
+    &.nav-celular{
+
+      display: flex;
+
+      flex-direction: column;
+      flex: flex-end;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 2rem;
+      right: -30%;
+      z-index: 10;
+
+      i{
+        margin-bottom: 1rem;
+
+      }
+    }
+
+
+
+
+  }
+
+
+
+  .menu{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+      border: none;
+      background-color: $celeste;
+    }
+
+    @include tablet-grande{
+
+        display: none;
+
+    }
+
+      i{
+
+        font-size: 4rem;
+
+      }
+
+  }
+
+  .menu:hover button{
+
+    cursor: pointer;
+    color: $rojo-oscuro;
+    i{
+
+      font-size: 3rem;
+
+    }
+
+  }
+
+
+}
+
+i{
+  transition: all .4s ease;
+
+}
+
+.iconos i:hover {
+
+  color: $rojo-oscuro;
+
+}

@@ -1,0 +1,42 @@
+@mixin tablet-grande{
+
+  @media only screen and (min-width: 768px){
+
+    @content;
+
+  }
+
+}
+@mixin tablet-chica{
+
+  @media only screen and (min-width: 480px){
+
+    @content;
+
+  }
+
+}
+
+
+
+
+
+@mixin celular-chico{
+
+  @media only screen and (max-width: 279px){
+
+    @content;
+
+  }
+
+}
+
+@mixin desktop{
+
+  @media only screen and (min-width: 988px){
+
+    @content;
+
+  }
+
+}
