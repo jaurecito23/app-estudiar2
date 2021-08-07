@@ -1,0 +1,275 @@
+.formulario-crear{
+	
+	
+	width: 95%;
+	margin: 3rem auto;
+
+	
+
+	.form{
+
+	h2{
+		font-family: $font1;
+		text-transform: uppercase;
+		font-size: 3rem;
+		color: $rojo-oscuro;
+		text-align: center;	
+		span{
+			background-color: $piel;
+			border-radius: .4rem;
+			display: inline-block;
+			padding: 1rem 1.2rem;
+			width: auto;
+			position: relative;
+			
+		}
+		span::before{
+			content: "";
+			width: 100%;
+			height: 25%;
+			background-color: rgba(1,1,1,.2);
+			position: absolute;
+			bottom: 1%;
+			left: 0%;
+			border-radius: .4rem;
+
+		}
+
+		&.span2{
+
+			span::before{
+			height: 50%;
+			}
+
+		}
+
+
+		&.span3{
+
+			span::before{
+			height: 75%;
+			}
+
+		}
+
+		&.span4{
+
+			span::before{
+			height: 100%;
+			}
+
+		}
+	}
+
+		margin: 1rem auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $celeste;
+		padding: 3rem 1rem;
+		border-radius: 1rem;
+
+	}
+
+
+	fieldset{
+
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+		legend{
+		font-size: 2rem;
+		color: $rojo-muy-oscuro ;
+		font-family: $font1;
+		text-align: center;
+		font-weight: bold;
+		}
+
+
+
+	}
+
+
+
+	.input{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		label{
+
+			color: $piel;
+			font-family: $font2;
+			font-size: 1.8rem;
+
+		}
+
+
+	}
+	input,textarea,select,.archivo label{
+
+			background-color: $gris-oscuro;
+			width: 100%;
+			padding: 1rem .8rem;
+			font-size:1.8rem;
+			border: none;
+			border-radius: .7rem;
+			color: $blanco;
+			margin-bottom: 2rem;
+
+		}
+
+		.siguiente{
+
+			width: 100%;
+
+		}
+
+		button,input[type="submit"]{
+			width: auto;
+			background-color: $rojo-oscuro;
+			transition: all 1s ease;
+			float:right;
+			margin-left: auto;
+			transition: all 1s ease-in-out;	
+			border: none;
+			border-radius: 1rem;
+			padding: 1rem 2rem;
+			color: $piel;
+			font-family: $font2;
+
+		}
+
+		input[type="submit"]:hover{
+
+		background-color: $gris-oscuro;
+		font-size: 2rem;
+		color: $celeste;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		}
+
+		button:hover{
+
+		background-color: $gris-oscuro;
+		font-size: 2rem;
+		color: $celeste;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		}
+
+		.opcion{
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			&:last-of-type{
+
+				margin-bottom: 5rem;
+
+			}
+			label{
+
+				margin-left: 10%;
+				position:relative;
+			}
+
+			label:hover{
+
+				color: $rojo-oscuro;
+				font-size: 1.5rem;
+				&::before{
+					content:"";
+					width: 100%;
+					background-color: $piel;
+					height: 5px;
+					position: absolute;
+					bottom: 85%;
+					left: 0%;
+				}
+
+			}
+
+			input{
+				margin: 0;
+				width: auto;
+				margin-right: 40%;
+				margin-left: auto;
+			}
+
+		}
+
+
+
+.archivo{
+	
+	margin: 2rem auto 3rem auto;
+	font-family: $font2;
+	label{
+
+		padding: 2rem;
+		transition: padding 1s ease;
+		transition: background-color 2s ease-in-out;
+		transition: color 8s ease;
+	}
+
+	label:hover{
+
+		padding: 1.5rem 3rem;
+		background-color: $piel;
+		color: $rojo-muy-oscuro;
+		i{
+
+			color: $gris-oscuro;
+
+		}
+	}
+	
+	i{
+
+		color: $piel;
+		font-size: 2.7rem;
+		margin-left: 1.4rem;
+		transition: color 2.5s ease-in-out;
+		
+	}
+}
+
+
+input::placeholder{
+	
+	color: $piel;
+	font-family: $font2;
+	font-size: 1.8rem;
+
+}
+
+.btn-final{
+	
+		
+
+	button,input{
+		margin: 2rem auto;
+		font-family: $font2;
+	}
+
+
+	input:hover{
+		transform: rotate(360deg);
+	}
+	button:hover{
+	transform: rotate(360deg);	
+
+	}
+
+
+}
+
+}
+

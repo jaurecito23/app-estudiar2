@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded",function(){
-
+  if(flecha){
   flechaScroll();//Home
   parpadear(flecha,"rojo-oscuro");//Home
+  }
   parpadear(nombreFooter,"blanco");//Home
+  if(rata){
   activarLaRata();//Home
+  }
+  if(nombre){
   escribirTexto(nombre,["J","JA","JAU","JAUR","JAURE"],"agrandar");//Home
+  }
 })
 
 const nombre = document.querySelector(".nombre");
@@ -12,20 +17,25 @@ const nombreFooter = document.querySelector(".nombre-footer")
 const flecha = document.querySelector("#flecha");
 function flechaScroll(){
 
-      flecha.addEventListener("click",(e)=>{
-        e.preventDefault();
+  if(flecha){
 
-        const seccion = document.querySelector(e.target.parentElement.attributes.href.value);
-        console.log(seccion);
 
-        seccion.scrollIntoView({
+  
+        flecha.addEventListener("click",(e)=>{
+          e.preventDefault();
 
-             behavior: "smooth",
-             //behavior: "",
-         });
+          const seccion = document.querySelector(e.target.parentElement.attributes.href.value);
+          console.log(seccion);
 
-      });
+          seccion.scrollIntoView({
 
+               behavior: "smooth",
+               //behavior: "",
+           });
+
+        });
+
+      }
 
  }
 
@@ -108,6 +118,7 @@ let posicion = 0;
 let intervalo = setInterval(
 
   function(){
+
     let posicionRata = posicion + "px";
 
     if(posicion >= fin){
@@ -120,7 +131,7 @@ let intervalo = setInterval(
   }
 },40
 
-)
+  )
 
 }
 
@@ -128,17 +139,24 @@ let intervalo = setInterval(
 
 function seComioelQueso(){
 
+if(rata){
+
+
   rata.classList.add("hidden");
   queso.classList.add("hidden");
 
 
 
   divRata.innerHTML = "<p>La <span>Rata Comilona</span> se ha comido el queso</p>";
-
+}
 }
 
 
 function activarLaRata(){
+
+  if(rata){
+
+
 
 
   const observer = new IntersectionObserver(function(entries){
@@ -150,4 +168,6 @@ function activarLaRata(){
   })
 
 observer.observe(rata);
+
+  }
 }

@@ -10,7 +10,12 @@ const chiste = document.querySelector(".chiste");
 const menu = document.querySelector("#btn-menu");
 const navegacion = document.querySelector(".nav");
 
+
 function observerNavegacion(){
+  if(chiste){
+  
+
+
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -21,6 +26,7 @@ const observer = new IntersectionObserver((entries)=>{
     }
 })
 observer.observe(chiste);
+  }
 }
 
 function menuNav(){
