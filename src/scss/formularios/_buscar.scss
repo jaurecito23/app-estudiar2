@@ -1,0 +1,80 @@
+.buscar{
+	margin: 3rem auto;
+	width: 90%;
+	fieldset{
+		display: flex;
+	}
+	input{
+		width: 90%;
+		font-size: 3rem;
+		border-radius: 1rem 0rem 0rem 1rem;
+		background-color: $piel;
+		border: none;
+		padding: 1rem .5rem;
+	}
+	div{
+		width: 10%;
+		heigth: 100%;
+		background-color: $piel;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-right: 1rem;
+		border-radius: 0rem 1rem 1rem 0rem;
+	}
+
+	i{
+
+		font-size: 3rem;
+		color: $gris-oscuro;
+		font-weight: bold;		
+
+	}
+
+
+}
+
+
+.elegirOpcion{
+	
+
+	width: 80%;
+	margin: 6rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	a{
+		text-align: center;
+		margin: 2rem auto;
+		background-color: $gris-oscuro;
+		color: $piel;
+		padding: 3rem 2rem;
+		border-radius: 1.4rem;
+		width: 100%;
+		font-size: 3rem;
+		font-family: $font2;
+		transition: all 2s ease-in-out;
+
+		i{
+			margin-left: 2rem;
+			color: $blanco;
+			font-size: 4rem;
+			transition: all 1s ease-in-out;
+		}
+
+	}
+
+	a:hover{
+
+		width: 95%;
+		font-size: 4rem;
+		color: $blanco;
+		i{
+			color: $piel;
+		}
+	}
+
+
+}

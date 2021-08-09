@@ -1,0 +1,89 @@
+.contenedor-examen{
+	
+	width: 90%;
+	margin: 4rem auto;
+	h2{
+
+		font-size: 3.4rem;
+		font-family: $font2;
+		text-align: center;
+		color: $rojo-oscuro;
+		span{
+			margin: 0;
+			background-color: $piel;
+			padding: .1rem 1.2rem;
+			border-radius: 1rem;
+			font-size: 2.9rem;
+
+		}
+
+
+	}
+
+	form{
+
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h3{
+
+		font-weight: bold;
+		font-family: $font1;
+		}
+		.cuestionario{		
+
+		color: $gris-oscuro;
+		font-size: 1.5rem;
+		.respuesta{
+
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1.5px solid $gris-oscuro;
+			transition: all 1s ease-in-out;
+		}
+		label{
+
+			font-family: $font1;
+		}
+
+		
+
+		}
+		.respuesta:hover{
+
+			
+				border-bottom: 3px solid $rojo-oscuro;
+				font-weight: bold;
+				margin: 3rem auto 1rem auto;
+
+		}
+
+		button{
+
+			float: right;
+			margin-top: 4rem;
+			background-color: $rojo-oscuro;
+			font-size: 2rem;
+			font-weigth: bold;
+			font-family: $font2;
+			text-transform: uppercase;
+			padding: 1rem 2rem;
+			border: none;
+			border-radius: 1rem;
+			color: $blanco;
+			transition: all 2s ease-in-out;
+		}
+
+		button:hover{
+
+			font-size: 2.7rem;
+			color: $piel;
+			transform: skew(5deg, 8deg);
+
+		}
+
+	}
+
+}
