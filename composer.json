@@ -1,0 +1,21 @@
+{
+    "name": "pc/app-estudiar2",
+    "description": "Es un proyecto para realizar cuestionarios",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\":"./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "Facundo Jauregui",
+            "email": "jauregui23fl@gmail.com"
+        }
+    ],
+    "require": {
+
+        "firebase/php-jwt": "^5.3"
+
+    }
+}

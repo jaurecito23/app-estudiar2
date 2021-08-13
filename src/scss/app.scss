@@ -1,8 +1,11 @@
 
+@import "base/main";
+@import "base/normalize";
 @import "base/variables";
 @import "base/globales";
 @import "base/mixins";
 @import "base/utilidades";
+
 
 @import "layout/hero";
 @import "layout/header";
@@ -10,7 +13,6 @@
 @import "layout/chiste";
 @import "layout/footer";
 @import "layout/rata";
-
 
 @import "formularios/crear";
 @import "formularios/buscar";

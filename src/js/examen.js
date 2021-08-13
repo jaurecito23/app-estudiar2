@@ -15,11 +15,11 @@ function eventoExamenes(){
 			examen.addEventListener("click",(e)=>{
 				e.preventDefault();
 				console.log("click");
-				window.location.href = "opciones.html";
+				window.location.href = "opciones";
 			})
 
 
-	})				
+	})
 
 
 }
